@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI/UX/AI 视觉设计周刊 2026-W27</title>
+    <meta name="description" content="Vibe Coding 进入先定义再实现的阶段，设计师需要把 AI 工具组织成稳定的设计与产品工作流。">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <nav class="topbar" aria-label="站点导航">
+        <a class="brand" href="../">UI/UX/AI 视觉设计周刊</a>
+        <div>2026-W27</div>
+      </nav>
+
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Issue 2026-W27</p>
+          <h1>AI 越强，前置的设计判断越重要。</h1>
+          <p class="lede">
+            这期的核心判断：设计师真正需要学习的，不是“让 AI 帮我做一张图”，而是把 AI 工具组织成稳定的设计与产品工作流。
+          </p>
+        </div>
+        <div class="signal-map" aria-label="本期信号地图">
+          <div class="signal-chip">
+            <strong>spec.md</strong>
+            <span>讲清产品逻辑、范围、状态和边界。</span>
+          </div>
+          <div class="signal-chip">
+            <strong>style.md</strong>
+            <span>固定视觉规则、语气、组件和交互感。</span>
+          </div>
+          <div class="signal-chip">
+            <strong>Figma 参考</strong>
+            <span>提供稳定的视觉目标和关键帧。</span>
+          </div>
+          <div class="signal-chip">
+            <strong>Codex 实现</strong>
+            <span>基于需求和视觉参考完成实现。</span>
+          </div>
+        </div>
+      </header>
+
+      <article class="section">
+        <div class="callout">
+          用 <code>spec.md</code> 讲清产品逻辑，用 <code>style.md</code> 固定视觉规则，用 Figma 或关键帧图片提供视觉参考，再让 Codex 负责实现。
+        </div>
+
+        <h2>本周主线</h2>
+
+        <h3>1. Vibe Coding 进入“先定义，再实现”的阶段</h3>
+        <p>最近值得关注的不是“几分钟做出一个产品”，而是更稳的 0-1 流程：</p>
+        <ol>
+          <li>用 ChatGPT 梳理需求和功能逻辑。</li>
+          <li>用图像生成或 Figma 固定关键视觉方向。</li>
+          <li>把视觉参考沉淀成 <code>style.md</code> 或 Figma frame。</li>
+          <li>再让 Codex 根据 <code>spec.md</code> + 视觉参考实现。</li>
+        </ol>
+        <p>这条方法的价值在于：不让 coding agent 自己脑补视觉。视觉本身就是产品概念的一部分，不能等开发完再补。</p>
+        <p>对设计师来说，这其实是一个机会。AI 没有让设计判断消失，反而要求设计师更清楚地定义：什么是对的视觉，什么是可接受的还原度，哪些状态和细节不能丢。</p>
+
+        <h3>2. Codex 正在从写代码工具变成个人工作流 Agent</h3>
+        <p>Codex 相关内容开始从“怎么写代码”扩展到“怎么整理工作”：</p>
+        <ul>
+          <li>复盘最近工作，提炼重复出现的流程和偏好。</li>
+          <li>把常用提示词、规则、模板沉淀成可复用资产。</li>
+          <li>结合屏幕读取和本地环境，做信息整理、摘要和自动化。</li>
+        </ul>
+        <p>但这里有个边界：不要让 agent 盲目记忆一切。更好的方法是让它基于证据提炼规则。</p>
+        <p>可以试这个复盘提示词：</p>
+        <pre><code>请复盘我最近的工作记录，找出重复出现的工作流、偏好和可复用资产。
+只有当某个模式至少出现过两次、流程相对稳定、并且复用后能明显提升效率时，才建议创建规则、模板、提示词或 agent。
+最后总结你创建或更新了什么、跳过了什么、还有哪些需要更多证据。</code></pre>
+
+        <h3>3. Figma Motion 开始变成实操课题</h3>
+        <p>Figma 相关信号集中在动效：粒子插件、Figma Motion、Shader、Config 2026 后的新教程。</p>
+        <p>真正值得关注的不是“Figma 也能做动效”，而是动效是否能留在设计画布里继续编辑、复用和交付。</p>
+        <p>一个好用的 Figma 动效工作流，至少应该回答三个问题：</p>
+        <ul>
+          <li>动效是不是可编辑，而不是导出成死图？</li>
+          <li>图层、文字、关键帧能不能继续调整？</li>
+          <li>最后能不能进入开发或产品演示链路？</li>
+        </ul>
+        <p>Figma Motion 后续可能会成为轻量原型和演示的重要层，也可能和 Rive、AE 形成新的分工。</p>
+
+        <h3>4. Design Skill 可能成为新工具分类</h3>
+        <p>这一周出现了一个有意思的词：Design Skill。</p>
+        <p>它不像普通插件，也不像一段提示词，更像是 AI agent 的专项能力。比如：</p>
+        <ul>
+          <li>从 SVG 和动效描述生成 Lottie。</li>
+          <li>生成 GSAP 网页动效代码。</li>
+          <li>生成 3D 交互地图。</li>
+          <li>从网页提取配色、字体、CSS 变量和设计规范，输出 <code>design.md</code>。</li>
+          <li>根据项目配置生成组件调用一致的界面。</li>
+        </ul>
+        <p>判断一个 Design Skill 有没有价值，可以看两点：</p>
+        <ul>
+          <li>它能不能把设计意图变成生产可用的产物？</li>
+          <li>它能不能从已有产品中提取可复用的设计规则？</li>
+        </ul>
+        <p>这个分类值得继续观察。具体工具仍建议先看源链接、文档或实际测试结果，再决定是否放进正式工作流。</p>
+
+        <h2>设计记忆</h2>
+
+        <h3>深色模式不是反色</h3>
+        <p>深色模式是人因学和视觉感知问题，不是把浅色界面反过来。它涉及对比度、视觉疲劳、夜间使用、可访问性和信息层级。</p>
+        <p>以后做深色界面时，可以先问三个问题：</p>
+        <ul>
+          <li>这个场景为什么需要暗色？</li>
+          <li>用户是在什么环境下使用？</li>
+          <li>哪些信息需要更安静，哪些信息仍然要突出？</li>
+        </ul>
+
+        <h3>配色要带场景</h3>
+        <p>一组“清透、年轻、轻松、可爱”的配色，不应该只存成色卡。更有用的是一起记录适用场景：</p>
+        <ul>
+          <li>用户气质</li>
+          <li>产品类型</li>
+          <li>情绪关键词</li>
+          <li>在 Figma 中如何作为方案调用</li>
+        </ul>
+        <p>配色不是收藏色值，而是带场景的设计决策。</p>
+
+        <h3>AI 工具 UI 需要单独建参考库</h3>
+        <p>AI 工具界面正在形成自己的类型：输入区、生成结果、历史记录、模型设置、状态反馈、可编辑输出。</p>
+        <p>以后看 AI 工具 UI，不要只看“好不好看”，还要拆它的信息结构：它是聊天式、画布式、面板式，还是工作流式？</p>
+
+        <h2>风险提示</h2>
+
+        <div class="callout risk">
+          <h3>平台自动化要谨慎</h3>
+          <p>用 AI 整理小红书收藏夹这类想法有启发，但不能鼓励批量操控平台界面，也不能绕过登录、验证码或反爬机制。</p>
+          <p>更合适的方向是：把 AI 用在个人知识整理、摘要和分类上，而不是高频自动化操作平台。</p>
+        </div>
+
+        <div class="callout risk">
+          <h3>社区线索不要直接当事实</h3>
+          <p>Codex 桌面端日志风险、腾讯 AI Agent 邮箱这类信息，适合作为社区观察和待核查线索。周刊可以记录“大家在讨论什么”，但具体结论最好等官方来源、产品文档或实际测试确认。</p>
+        </div>
+
+        <h2>本周值得试</h2>
+        <ol class="try-list">
+          <li>选一个小产品想法，先写 <code>spec.md</code> 和 <code>style.md</code>，再让 Codex 实现。</li>
+          <li>试一个 Figma 动效流程，重点看是否可编辑、可复用、可交付。</li>
+          <li>把一组配色整理成可调用的设计记忆，记录适用场景，而不只是色值。</li>
+          <li>做一次 Codex 周复盘，让它提炼最近重复出现的工作流和模板。</li>
+          <li>拆解一个 AI 工具界面，看它的输入区、结果区、历史记录、设置项、状态反馈和可编辑输出。</li>
+        </ol>
+
+        <h2>收束</h2>
+        <p>这份周刊的方向不是追热点，而是帮设计师判断：哪些 AI/设计工作流真的值得学，哪些视觉参考能复用，哪些只是信息流噪音。</p>
+      </article>
+
+      <footer class="footer">
+        <p>本页由公开版周刊生成。社区线索和待核查信息已用谨慎表述处理。</p>
+      </footer>
+    </main>
+  </body>
+</html>
