@@ -1,0 +1,8 @@
+{
+  "name": "ui-ux-ai-weekly",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
